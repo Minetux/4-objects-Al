@@ -2,13 +2,25 @@
 /// Here we define all the root variables we need for our project.
 /// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
+$tablet-size: 768px;
+$desktop-size: 1024px;
+
 :root {
-    --color-primary-dark-blue: #0f162e;
-    --color-primary-pink: #CA59FF;
-    --color-primary-blue: #6C7CFF;
-    --color-primary-light-blue: #2AFFFF;
-    --color-primary-yellow: #FFF629;
-    --color-white: #FFFFFF;
-    --color-gray: #272D42;
-    --color-black: #000000;
+  --color-primary-dark-blue: #0f162e;
+  --color-primary-pink: #ca59ff;
+  --color-primary-blue: #6c7cff;
+  --color-primary-light-blue: #2affff;
+  --color-primary-yellow: #fff629;
+  --color-white: #ffffff;
+  --color-gray: #272d42;
+  --color-black: #000000;
+  --tablet-size: 768px;
+  --desktop-size: 1024px;
+  --rounding: 16px;
+}
+
+@media (min-width: $tablet-size) {
+  :root {
+    --rounding: 24px;
+  }
 }

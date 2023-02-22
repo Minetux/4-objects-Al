@@ -5,12 +5,34 @@
 @import "styles/root.scss";
 @import "styles/fonts.scss";
 @import "../pages/home-page/styles/home-page.scss";
+@import "./styles/typography.scss";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: var(--color-primary);
+  min-height: 100vh;
 }
 
 p {
   color: var(--color-on-surface);
 }
+
+.homepage__grid, .items__grid {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media (min-width: $tablet-size) {
+  .items__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: $desktop-size) {
+  .homepage__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
